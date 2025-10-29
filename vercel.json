@@ -1,12 +1,10 @@
 {
-  "_comment": "Vercel deployment configuration for Vue 3 SPA",
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
   "installCommand": "npm install",
   "rewrites": [
     {
-      "_comment": "SPA routing: All routes redirect to index.html for client-side routing",
       "source": "/(.*)",
       "destination": "/index.html"
     }
