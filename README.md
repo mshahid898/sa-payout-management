@@ -9,7 +9,6 @@ A Vue 3 application for managing member payouts with timeline tracking, multi-wa
 - [Project Structure](#project-structure)
 - [Technologies Used](#technologies-used)
 - [Production Deployment](#production-deployment)
-- [Contributing](#contributing)
 
 ## Features
 
@@ -177,14 +176,6 @@ If deployment fails:
 2. Verify `package.json` is in the repository root
 3. Ensure all dependencies are listed in `package.json`
 4. Check Vercel build logs for specific errors
-
-## Contributing
-
-We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
-- Development setup
-- Code style guidelines
-- Git commit message conventions
-- Pull request process
 
 ## License
 
