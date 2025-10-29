@@ -1,23 +1,28 @@
 # Dependencies
+# Node modules and lock files should not be committed
 node_modules/
 package-lock.json
 
 # Build outputs
+# Production build artifacts are generated during build process
 dist/
 .DS_Store
 
 # Environment files
+# Sensitive configuration files should not be committed
 .env
 .env.local
 .env.*.local
 
-# IDE
+# IDE and editor files
+# Editor-specific configurations
 .vscode/
 .idea/
 *.swp
 *.swo
 
 # Logs
+# Error logs and debug files
 *.log
 npm-debug.log*
 

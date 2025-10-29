@@ -1,1 +1,4 @@
+# Node.js version for this project
+# Used by nvm (Node Version Manager) and deployment platforms like Vercel
+# This ensures consistent Node.js version across all environments
 18

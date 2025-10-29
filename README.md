@@ -2,6 +2,15 @@
 
 A Vue 3 application for managing member payouts with timeline tracking, multi-wallet support, and comprehensive payout history.
 
+## 📋 Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Technologies Used](#technologies-used)
+- [Production Deployment](#production-deployment)
+- [Contributing](#contributing)
+
 ## Features
 
 - **Member Payout Management**: Track and manage individual member payouts
@@ -112,3 +121,71 @@ The application is configured for production deployment with:
 - Element Plus component library
 - Responsive design
 - Error handling and validation
+
+### Vercel Deployment
+
+This project is configured for deployment on Vercel:
+
+1. **Configuration Files:**
+   - `vercel.json` - Vercel deployment settings with SPA routing
+   - `vite.config.js` - Production build optimizations with code splitting
+   - `.nvmrc` - Node.js version specification (Node 18)
+
+2. **Build Configuration:**
+   - Build command: `npm run build`
+   - Output directory: `dist`
+   - Framework: Vite
+   - SPA routing: All routes redirect to `index.html` for client-side routing
+
+3. **Build Optimizations:**
+   - Code splitting: Vendor libraries (Vue, Vue Router, Element Plus) are split into separate chunks
+   - Minification: Uses esbuild for fast production builds
+   - Asset optimization: Assets are organized in the `dist/assets/` directory
+
+4. **Deployment Steps:**
+   ```bash
+   # Build locally to test
+   npm run build
+   
+   # Preview production build
+   npm run preview
+   
+   # Push to GitHub (Vercel auto-deploys on push)
+   git push origin main
+   ```
+
+### Environment Requirements
+
+- **Node.js**: 18.x (specified in `.nvmrc`)
+- **Package Manager**: npm (v10+ recommended)
+- **Build Tool**: Vite 4.x
+
+### Build Output
+
+The production build generates:
+- `dist/index.html` - Main HTML file
+- `dist/assets/` - Compiled JavaScript and CSS files
+  - `vue-vendor-*.js` - Vue core libraries
+  - `element-plus-*.js` - Element Plus UI library
+  - `index-*.js` - Application code
+  - `index-*.css` - Styles
+
+### Troubleshooting
+
+If deployment fails:
+1. Check Node.js version matches `.nvmrc` (Node 18)
+2. Verify `package.json` is in the repository root
+3. Ensure all dependencies are listed in `package.json`
+4. Check Vercel build logs for specific errors
+
+## Contributing
+
+We welcome contributions! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on:
+- Development setup
+- Code style guidelines
+- Git commit message conventions
+- Pull request process
+
+## License
+
+This project is part of the SA Payout Management System.

@@ -1,7 +1,7 @@
 {
-  "name": "vue-prototype",
+  "name": "sa-payout-management",
   "version": "1.0.0",
-  "description": "Vue prototype with sidebar and content layout",
+  "description": "Payout Management System - Vue 3 application for managing member payouts with timeline tracking, multi-wallet support, and comprehensive payout history",
   "main": "index.js",
   "scripts": {
     "dev": "vite",
